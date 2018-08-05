@@ -19,7 +19,7 @@ var bool = false;
 function fun(arg) {
 
   //Your answer in the console.log()
-  console.log();
+  console.log(arg ? "Yea, it's true" : "Nah, it's false");
 }
 
 fun(bool) 
@@ -36,11 +36,18 @@ fun(bool)
 //Call your canYouBall function, passing in the likesBasketball variable (if you're having trouble remembering what this means, refer to line 25 above). 
 
 // ==============================================================
+var likesBasketball = true;
 
- 
+function canYouBall(arg) {
+  console.log(arg ? "Welcome to the Warriors" : "It's ok, there's always code :)");
+}
+
+canYouBall(likesBasketball);
 // ========================= QUESTION 3 =========================
 // In this exercise, make a function which takes in an argument (very similar to the past two questions). If the argument is true, console.log("I exist"). If the argument is false, console.log("Nobody's home").
-
+function argFunc(arg) {
+  console.log(arg ? "I exist" : "Nobody's home");
+}
 
 // ==============================================================
 
@@ -53,7 +60,9 @@ var personTwo;
 // Comment out what you expect to see in the console from each function. Then, compare your guess to the actual console.log in the browser. 
 
 // ==============================================================
-
+argFunc(personOne);
+argFunc(personTwo);
+//I exist from personOne because it has a value. Nobody's home from personTwo because it does not have a value.
 
 // ========================= QUESTION 5 =========================
 var zero = 0;
@@ -64,8 +73,11 @@ var three = 3;
 // Call the function you made in question 3 four times. In each instance, pass in a different one of the four given variables.
 
 // Comment out what you expect to see in the console from each function. Then, compare your guess to the actual console.log in the browser. 
-
-
+argFunc(zero);
+argFunc(one);
+argFunc(two);
+argFunc(three);
+// I expected them all to return "I exist" because they all had been defined, but zero returned nobody's home so assigning a variable to 0 must not change it's boolean value from falsey to truthy.
 // ==============================================================
 
   </script>

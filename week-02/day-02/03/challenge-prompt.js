@@ -7,7 +7,7 @@ function fun() {
 // why doesn't "Functions are FUN! appear yet?"
 /*
 
-Function hasn't been called yet.
+Function fun hasn't been called yet.
 
 */
 

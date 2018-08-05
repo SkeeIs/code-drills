@@ -17,28 +17,37 @@ Boolean(welcomePrompt);
         
 
         // if 50 alert half sweetened
-        if (sweets === 50) {
+        if (sweets === "50") {
             alert("Half Sweetened");
         }
     
         // else if sweets 100 
-        else if (sweets === 100) {
-            alert("Full Sweetened");
-        }
+        else if (sweets === "100") {
+            
 
         // if 100 alert normal sweet
-
+            alert("Normal Sweetened");
+        }
     
         // else if sweet 200
-
+        else if (sweets === "200") {
+    
+        
 
         // if 200 alert super sweet
-
+            alert("Super Sweetened");
+        }    
 
         // finally else alert with a string of no sweets added
-
+        else {
+            alert("Unsweetened")
+        }
 
     // then write on the page with a string "of your order of plus " svariable drinks and a string of " boba with the sweet level of " and a variable of sweets
- 
-    // else say a string of goodbye.
-
+        if (drinks && sweets) {
+            document.write("Your order of " + drinks + " boba with the sweet level of " + sweets + " will be ready shortly!");
+        }    
+            // else say a string of goodbye.
+        else {
+            document.write("Goodbye!");
+        }
