@@ -7,8 +7,8 @@
 // display the string in the display-area when clicked later.
 function createButton(str) {
   // ---------- Your Code Here ----------
-  $("<input type='button' value='Dynamic Button' id='buttonOne' />").appendTo('#button-area');
-
+  //$("<input type='button' value='Dynamic Button' id='buttonOne' />").appendTo('#button-area');
+  $("#button-area").html("<button data-value='str'>'str'</button>");
 
 
 

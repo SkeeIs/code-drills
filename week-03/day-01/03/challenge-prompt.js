@@ -47,8 +47,8 @@ console.log("==================== Question 05 ====================");
 setTimeout(somethingNew, 1100);
 
 function somethingNew() {
-    //var audio = new Audio("3703.mp3");
-    //audio.play();
+    var audio = new Audio("3703.mp3");
+    audio.play();
     console.log("Question 5 Completed!");
 }
 
