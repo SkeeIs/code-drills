@@ -14,10 +14,6 @@ console.log(firstName, lastName, occupation, city, state)
     $("#city").val(" ");
     $("#state").val(" ");  
 
-//$(".form").empty();
-    //this.formClear = function () {
-      //$form.find('input:text, input:password, input:file, select, textarea').val('');
-    //}
 console.log($(".form"));    
     $("#results").html("<div>" + firstName + ' ' + lastName + "</div><div>"+occupation +"</div><div>"+city + ', ' + state +"</div>");
   })

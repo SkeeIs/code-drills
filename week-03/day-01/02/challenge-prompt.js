@@ -7,8 +7,14 @@
 // display the string in the display-area when clicked later.
 function createButton(str) {
   // ---------- Your Code Here ----------
-  //$("<input type='button' value='Dynamic Button' id='buttonOne' />").appendTo('#button-area');
-  $("#button-area").html("<button data-value='str'>'str'</button>");
+  var buttonDiv = $("<div>");
+  var newButton = $("<button>");
+  newButton.attr("class", "word-buttons");
+  newButton.attr("data-value", str);
+  newButton.text(str);
+  console.log(newButton);
+  buttonDiv.append(newButton);
+  $("#button-area").append(buttonDiv);
 
 
 
@@ -38,15 +44,17 @@ function displayContent(event) {
 
 
 
-// document.ready shorthand
 // Put your click listeners here.
-$(function () {
+  $(document).ready(function () {
   // ---------- Your Code Here ----------
+    $(".word-buttons").on("click", displayContent());
 
-
-
-
-
-
+    $("#clear-button").on("click", function() {
+      $("#user-input").val(" ");
+    })
+    $("#submit-button").on("click", function() {
+      var userWord = $("#user-input").val();
+      createButton(userWord);
+    });
+  });  
   // ---------- End of Code area ----------
-})

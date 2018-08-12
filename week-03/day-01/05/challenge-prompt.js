@@ -34,7 +34,7 @@ var nestedArray = [[1,2], ["nested", ["Radio Flyer Wagon", "Chemistry Set", ["Jo
 var target;
 // assign `target` the value of "Yo-Yo" using the `nestedArray` variable
 // 
-
+target = nestedArray[1][1][2][1];
 
 
 
@@ -48,7 +48,7 @@ var nestedArray = ["Pop-Up Book", ["Stuffed Mickey Mouse", ["Beach Ball", "Sock 
 var target;
 // assign `target` the value of "Sock Monkey" using the `nestedArray` variable
 // 
-
+target = nestedArray[1][1][1];
 
 
 
@@ -63,7 +63,7 @@ var target;
 // assign `target` the value of 42 using the `nestedNumberArray` variable
 // 
 
-
+target = nestedNumberArray[6][4][2];
 
 
 // This should console log out 42
@@ -76,7 +76,7 @@ var nestedMixedArray = [8,[76,["Bubble Solution"],530,"Slinky","Magic 8 Ball","L
 var target;
 // assign `target` the value of "Legos" using the `nestedMixedArray` variable
 // 
-
+target = nestedMixedArray[1][5];
 
 
 
@@ -96,7 +96,7 @@ var target;
 // assign `target` the value of "Value!" using the `nestedObject` variable
 // 
 
-
+target = nestedObject.outer.innerKey.object.key;
 
 
 // This should console log out "Value!"
@@ -111,7 +111,7 @@ var target;
 // assign `target` the value of "goal" using the `nestedMixedDataTypes` variable
 // 
 
-
+target = nestedMixedDataTypes.array[1].object;
 
 
 // This should console log out "goal"
@@ -221,7 +221,10 @@ var toyArrayOfObjects = [
 
 function iterateArrObjects(arrOfObj){
   // ---------- Your Code Here ----------
-
+  for (var i = 0; i < arrOfObj.length; i++) {
+    var returnList = "Count: " + arrOfObj[i].Product + "\n" + "Item: " + arrOfObj[i].item + "\n" + "*************************"
+    console.log(returnList);
+  }
 
 
 
@@ -253,7 +256,11 @@ console.log("==================== Question 08  ====================");
 
 function iterateArrObjectsReverse(arrOfObj){
   // ---------- Your Code Here ----------
-
+  var toysReversed = arrOfObj.reverse();
+  for (var i = 0; i < toysReversed.length; i++) {
+    var reversedList = "Count: " + toysReversed[i].Product + "\n" + "Item: " + toysReversed[i].item + "\n" + "*************************"
+    console.log(reversedList);
+  }
 
 
   

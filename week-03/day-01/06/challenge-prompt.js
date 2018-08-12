@@ -25,11 +25,13 @@ var toyArray = ["Water Balloon","Silly Putty","Paint-by-Numbers Kit",
 
 function returnCustomObject(arr){
 	var obj ={};
-  
   // ---------- Your Code Here ----------
-
-
-
+  arr.sort(); 
+  for (var i = 0; i < arr.length; i++) {
+  //   var toy
+  
+  console.log("the array info" + arr);
+  }
 
 
 
