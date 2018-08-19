@@ -8,24 +8,30 @@
 function checkDivisors(arr) {
 
   // ---------- Your Code Here ----------        
-  var numerator; 
-  var denominator;
-    for (var i = 0; i < arr.length; i ++) {
-      var numerator = arr[i];
-      for (var j = 0; j < arr.length; j++) {
-        var denominator = arr[j];
-        console.log(numerator);
-        console.log(denominator);
-        if (numerator % denominator === 0) {
-          return true;
-        }
-        else {
-          return false;
+    do {  
+      var divisible = false;
+       for (var i = 0; i < arr.length; i ++) {
+        var numerator = arr[i];
+        for (var j = 0; j < arr.length; j++) {
+          var denominator = arr[j];
+          if (numerator % denominator === 0) {
+            return true;
+          }
         }
       }
     }
-}
+    while (divisible === false)
+
+  }
+
+
+
+
+
+
   // ----------- End Code Area -----------
+
+}
 
 // This should console log true
 console.log(checkDivisors([4, 35, 3, 9, 22, 10]));
