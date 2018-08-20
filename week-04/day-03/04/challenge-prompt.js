@@ -7,13 +7,13 @@ Given an array of strings, "evenWordLengthOnly" returns an array containing only
 */
 function evenWordLengthOnly(words) {
   // your code here
-
-  
-
-
-
-
-
+  var evenArr = [];
+  for (var i = 0; i < words.length; i++) {
+    if (words[i].length % 2 === 0) {
+      evenArr.push(words[i]);
+    }
+  }
+  return evenArr;
   // code ends here
 }
 var output = evenWordLengthOnly(['word', 'words', 'food', 'foods']);
@@ -30,18 +30,12 @@ Notes:
 */
 function countWords(str) {
   // your code here
-
-  
-
-
-
-
-
-
-
-
-
-    // code ends here
+  var wordObj = ;
+  var count = 0;
+  for (var i = 0; i < str.length; i++) {
+    
+  }
+  // code ends here
 }
 
 var output = countWords('ask a bunch get a bunch');

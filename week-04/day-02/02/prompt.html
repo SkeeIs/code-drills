@@ -12,16 +12,38 @@
   <script>
     function unique(str) {
     // ====================== YOUR WORK HERE ===================
-
-
-
-
-
+  //initialize empty array
+    var emptyArr = [];
+  //iterate through string
+    for (var i = 0; i < str.length; i++) {
+      //essentially a temp variable to store current str[i] value
+      var letterHolder = str[i];
+    //watch in console the for loop iterate through the letters 
+      console.log(letterHolder);
+      //a boolean check to see if the current value of str[i] already exists in our emptyArr array
+      if (emptyArr[letterHolder]) {
+        //console.log the return of "true" when a repeat is found
+        console.log(emptyArr[letterHolder])
+        //make sure we are returning false for the lack of uniqueness & not true that we found a double
+        return false; 
+    }  
+    else {
+      emptyArr[letterHolder] = true;
+    }
+  }
+  //for loop has to be completed (no letters left to compare) before we return true the word is unique
+  return true;
     // =========================================================
     }
     console.log(unique("chicken"))
     console.log(unique("robert"))
     console.log(unique("ricky"))
+    console.log(unique("taylor"))
+    console.log(unique("console"))
+    console.log(unique("unique"))
+    console.log(unique("aa"))
+    console.log(unique("twisted"))
+    console.log(unique("area"))
   </script>
   
 </body>

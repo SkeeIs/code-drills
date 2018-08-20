@@ -12,8 +12,19 @@
   <script>
     function compressor(str) {
     // ====================== YOUR WORK HERE ===================
-
-
+      var charArray = str.split("");
+      console.log(charArray);
+      var charCount = [];
+      for (var i = 0; i < charArray.length; i++) {
+        if (charCount[charArray[i]] === undefined) {
+          charCount[charArray[i]] = 0;
+        }
+        charCount[charArray[i]]++;
+      }    
+      
+      for (var i in charCount) {
+       console.log(i + charCount[i])
+      }
 
 
 
