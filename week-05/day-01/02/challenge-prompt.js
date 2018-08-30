@@ -8,7 +8,41 @@
 //                Helper Functions (Optional)
 //
 // -------------------- Your Code Here --------------------
+function isPrime(arr) {
+  
+  for (var i = 0; i < arr.length; i ++) {
+    
+    var testNo = arr[i];
+    
+    var result = false;
+    
+    for(var n = testNo - 1; n > 1; n--) {
+      
+      result = (testNo % n === 0) + result;
+   
+    }
+    
+    if(result === 0 && testNo > 1) {
+      
+      return true;
+    
+    }
+    
+    return false;
+  
 
+  //Test for Prime Number
+
+  var newArr = []; 
+
+  for(n=0; n<arr.length; n++){
+    if(isPrime(arr[n])){
+      newArr.push(arr[n]);
+    }
+  }
+
+  return newArr;
+}
 // --------------------- End Code Area --------------------
 
 
@@ -18,19 +52,19 @@
 // ----------------------------------------------------------
 function primeFactors(num) {
   // -------------------- Your Code Here --------------------
-var factorArr = [];
+  var factorArr = [];
 
-for (var i = 0; i < num; i++) {
-  if (num % i === 0) {
-    var tempNum = i;
+  for (var i = 2; i < num; i++) {
+  
+    if (num % i === 0) {
     
+      factorArr.push(i);
+      //console.log(factorArr);
+    }
+  
   }
-}
 
-
-
-
-
+  isPrime(factorArr);
   // --------------------- End Code Area --------------------
 }
 
