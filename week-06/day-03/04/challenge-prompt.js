@@ -14,20 +14,20 @@ function indexOfLetter(char, str) {
 var output = indexOfLetter('a', 'Im a Software Engineer');
 console.log(output); // --> 3
 
-// /*Write a function called "evenElementsOnly".
+/*Write a function called "evenElementsOnly".
 
-// Given an object and a key, "evenElementsOnly" looks through the array of numbers
-// at that key and returns a new array containing only even elements from that array
+Given an object and a key, "evenElementsOnly" looks through the array of numbers
+at that key and returns a new array containing only even elements from that array
 
-// Starter Code :*/
-// function evenElementsOnly(obj, key) {
-//   // code starts here
+Starter Code :*/
+function evenElementsOnly(obj, key) {
+  // code starts here
 
-//     // code ends here
-// }
+    // code ends here
+}
 
-// var obj = {
-//   key: [1000, 11, 51, 17]
-// };
-// var output = evenElementsOnly(obj, 'key');
-// console.log(output); // --> [1000, 51]
+var obj = {
+  key: [1000, 11, 51, 17]
+};
+var output = evenElementsOnly(obj, 'key');
+console.log(output); // --> [1000, 51]
